@@ -1,52 +1,37 @@
-# Project Name
-> Outline a brief description of your project.
+# Lending Club Case Study
+Detailed analysis about past loan applicants. The aim is to identify patterns which indicate if a person is likely to default, which may be used for taking actions such as denying the loan, reducing the amount of loan, lending (to risky applicants) at a higher interest rate, etc
+Using EDA understand how consumer attributes and loan attributes influence the tendency of default.
 
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+* [General Information]
+* [Approach]
+* [Conclusions]
 
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- Analyse loan.csv than contains information of past loan applicants.
+- Understand consumer attributes and loan attributes
+- Find out variable that can be used as indicator to find whether applicant will default or not.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+## Approach
+- Remove the columns having null value count greater than 90%
+- Remove the columns that are not useful for analysing purpose
+- Remove the outliers
+- Do Univariate, Segmented Univariate, Bivariate Analysis.
+- Create Business-driven or Type-drive columns and Analyse
+  
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+Below are important 5 Variables which can be used as indicators to predict if a loan will be default.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-
-## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- Interest Rate : Loans taken at high interest rate are most likely to be default irrespective of annual income of the borrower.
+- Grade : Grade is quality score assigned by bank to customer based on credit history, quality of colateral and likelihood of repayment.
+           E, F and G category of loan are most likely to default
+- Home Ownership Status : Borrowers with home ownership status “OTHER” taken comparatively high loan amount and paying high
+           monthly instalments are most likely to default the loan. 
+- Revolving credit : This is a open-ended credit account that can be used and paid repeatedly as long as account is remain open.
+           Borrowers most likely to default if their revolving credit utilistaion exceeds 50%
+- Loan to Income Ratio : If loan amount is 50% of the annual Income then 30% of borrowers belong to same income group are
+           Defaulters.
 
 
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
